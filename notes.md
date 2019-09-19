@@ -1,22 +1,24 @@
 # Install
-conda create -n chopchop python=2.7 biopython numpy scipy pandas
+`conda create -n chopchop python=2.7 biopython numpy scipy pandas`
 
-# download chopchop
+### download chopchop
 https://bitbucket.org/valenlab/chopchop
 
-# download genome `.3bit` and bowtime index `.*.ebwt` datafiles for reference
+## setup datafiles
+
+`mkdir datafiles`  
+`cd datafiles`  
+
+download genome `.3bit` and bowtime index `.*.ebwt` datafiles for reference
 http://chopchop.cbu.uib.no/bin/genomes/
 
-# Setup
-`mkdir datafiles`
-`cd datafiles`
-download the appropriate gff3 and gtf references
+download the appropriate gff3 and gtf references  
 - Aedes-aegypti-LVP_AGWG_BASEFEATURES_AaegL5.1.gff3 
 - Aedes-aegypti-LVP_AGWG_BASEFEATURES_AaegL5.1.gtf 
 - Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gff3
 - Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gtf
 
-convert annotations gtf to a `gene_table` using
+convert annotations gtf to a `gene_table` using  
 `utils/gff3togenetable.sh Aedes-aegypti-LVP_AGWG_BASEFEATURES_AaegL5.1.gff3`
 
 extract transcript id list
