@@ -42,8 +42,8 @@ convert annotations gtf to a `gene_table` using
 `../utils/gff3togenetable.sh Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gff3`  
 
 extract transcript id list
-edit script `genelist2translist.py` to set the chromosomes which should be used
-`../utils/genelist2translist.py Aedes-aegypti-LVP_AGWG_BASEFEATURES_AaegL5.1.gtf > transcript_list_Aaegypti_L5.1`
+edit script `genelist2translist.py` to set the chromosomes which should be used  
+`../utils/genelist2translist.py Aedes-aegypti-LVP_AGWG_BASEFEATURES_AaegL5.1.gtf > transcript_list_Aaegypti_L5.1`  
 `../utils/genelist2translist.py Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gtf > transcript_list_AgamP4.11`  
 *NOTE: The resulting transcript lists are contained in this repository*
 
@@ -56,7 +56,7 @@ edit script `genelist2translist.py` to set the chromosomes which should be used
 
 # misc notes (not actual workflow):
 
-#### testrun
+#### testrun  
 `./chopchop.py -G AgamP4 -o foo -Target AGAP003035-RA`
 
 ```
@@ -89,7 +89,7 @@ CRISPR_DEFAULT = {"GUIDE_SIZE" : 20,
 
 #### Adding gene name and combining all chopchop output files
 stream awk output into python using popen (see notebook)  
-Sooo much faster than using python
+Sooo much faster than using python  
 ```
 cd AgamP4.11
 time awk -F '\t' 'BEGIN{OFS=FS}{if(FNR==1){if(NR==FNR){print $0, "transcript_id"}}else{print $0, FILENAME}}' AGAP* > ../combined.out
