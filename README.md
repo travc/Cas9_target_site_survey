@@ -3,6 +3,7 @@
 
 *NOTE: Large datafiles (eg. vcf files) will gladly be provided upon request.*
 
+- `sample_meta.xlsx` : sample lists and metadata for the VGL (Vector Genetics Lab) samples used in this study
 - `notes.md` : working notes for running chopchop on all transcripts from a genome
 - `all_transcript_runs/` : scripts and log files from running chopchop on all transcripts for AgamP4.11 and AaegL5.1
 - `utils/` : additional small scripts used in preparing datafiles for chopchop
