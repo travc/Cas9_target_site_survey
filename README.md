@@ -1,6 +1,8 @@
 ## Scripts and misc. for the paper: 
 # Abundance of conserved CRISPR-Cas9 target sites within the highly polymorphic genomes of Anopheles and Aedes mosquitoes from natural populations
 
+This project was funded by the *Univeristy of California, Irvine, Malaria Inititive*
+
 *NOTE: Large datafiles (eg. vcf files) will gladly be provided upon request.*
 
 - `sample_meta.xlsx` : sample lists and metadata for the VGL (Vector Genetics Lab) samples used in this study
